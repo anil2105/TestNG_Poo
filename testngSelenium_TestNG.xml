@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium_TestNG">
+  <test thread-count="5" name="Testt">
+    <classes>
+      <class name="Selenium_TestNG.TestNG_AnnotationEx2"/>
+      <class name="Selenium_TestNG.Demo8"/>
+      <class name="Selenium_TestNG.Demo7"/>
+      <class name="Selenium_TestNG.InheritanceEx_In_TestNG"/>
+      <class name="Selenium_TestNG.Demo9"/>
+      <class name="Selenium_TestNG.Demo4"/>
+      <class name="Selenium_TestNG.Demo3"/>
+      <class name="Selenium_TestNG.Demo6"/>
+      <class name="Selenium_TestNG.Demo5"/>
+      <class name="Selenium_TestNG.Demo2"/>
+      <class name="Selenium_TestNG.Demo1"/>
+      <class name="Selenium_TestNG.Demo11"/>
+      <class name="Selenium_TestNG.Demo10"/>
+      <class name="Selenium_TestNG.VerifyLoginPage_SoftAssert"/>
+      <class name="Selenium_TestNG.VerifyLoginPage_Assert"/>
+      <class name="Selenium_TestNG.Inheritance_In_TestNG"/>
+      <class name="Selenium_TestNG.TestNG_AnnotationEx1"/>
+    </classes>
+  </test> <!-- Testt -->
+</suite> <!-- Selenium_TestNG -->

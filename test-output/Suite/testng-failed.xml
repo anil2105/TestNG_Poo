@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Selenium_CapturingSccreenshot.CapturingScreenshot"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Selenium_CapturingSccreenshot.VerifyLoginPage_Screenshot">
+        <methods>
+          <include name="moveToAccountsAndLists"/>
+          <include name="clickOnSignInButton"/>
+        </methods>
+      </class> <!-- Selenium_CapturingSccreenshot.VerifyLoginPage_Screenshot -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

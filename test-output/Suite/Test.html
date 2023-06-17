@@ -1,0 +1,2702 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>209/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 15 02:12:30 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38390 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.VerifyLoginPage_Assert.verifyValidLoginPage()'><b>verifyValidLoginPage</b><br>Test class: TestNG.VerifyLoginPage_Assert</td>
+<td><div><pre>java.lang.AssertionError: expected [aaaaaaaaaa] but found [actiTIME - Login]
+	at TestNG.VerifyLoginPage_Assert.verifyValidLoginPage(VerifyLoginPage_Assert.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1311544814", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1311544814'><pre>java.lang.AssertionError: expected [aaaaaaaaaa] but found [actiTIME - Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at TestNG.VerifyLoginPage_Assert.verifyValidLoginPage(VerifyLoginPage_Assert.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>TestNG.VerifyLoginPage_Assert@22555ebf</td></tr>
+<tr>
+<td title='TestNG.VerifyLoginPage_SoftAssert.verifyValidLoginPage()'><b>verifyValidLoginPage</b><br>Test class: TestNG.VerifyLoginPage_SoftAssert</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=114.0.5735.133)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-B3ICOIK&apos;, ip: &apos;192.168.43.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51913}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef203a39d56f6dbc2024c0530dbbc93f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at TestNG.VerifyLoginPage_SoftAssert.verifyValidLoginPage(VerifyLoginPage_SoftAssert.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace979532928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace979532928'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=114.0.5735.133)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-B3ICOIK&apos;, ip: &apos;192.168.43.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51913}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef203a39d56f6dbc2024c0530dbbc93f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at TestNG.VerifyLoginPage_SoftAssert.verifyValidLoginPage(VerifyLoginPage_SoftAssert.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG.VerifyLoginPage_SoftAssert@36ebc363</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.TestNG_AnnotationEx2.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.TestNG_AnnotationEx2<br/>
+<a href="#Output-103103526" onClick='toggleBox("Output-103103526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-103103526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-103103526">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG_AnnotationEx2@292b08d6</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1048855692" onClick='toggleBox("Output-1048855692", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1048855692" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1048855692">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1720339" onClick='toggleBox("Output-1720339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1720339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1720339">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-503642634" onClick='toggleBox("Output-503642634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-503642634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-503642634">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1725165248" onClick='toggleBox("Output-1725165248", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725165248" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725165248">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1806431167" onClick='toggleBox("Output-1806431167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1806431167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1806431167">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-35534346" onClick='toggleBox("Output-35534346", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-35534346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-35534346">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1876443073" onClick='toggleBox("Output-1876443073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1876443073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1876443073">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1523457748" onClick='toggleBox("Output-1523457748", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1523457748" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1523457748">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo2.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo2<br/>
+<a href="#Output-2044366277" onClick='toggleBox("Output-2044366277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044366277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044366277">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo2@7cc0cdad</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-769530879" onClick='toggleBox("Output-769530879", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-769530879" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-769530879">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.TestNG_AnnotationEx1.testCase2()'><b>testCase2</b><br>Test class: TestNG.TestNG_AnnotationEx1<br/>
+<a href="#Output-915500720" onClick='toggleBox("Output-915500720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-915500720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-915500720">
+TestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG_AnnotationEx1@206a70ef</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-302977067" onClick='toggleBox("Output-302977067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-302977067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-302977067">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-943454742" onClick='toggleBox("Output-943454742", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-943454742" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-943454742">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1636050357" onClick='toggleBox("Output-1636050357", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1636050357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1636050357">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1354083458" onClick='toggleBox("Output-1354083458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1354083458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1354083458">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2082781203" onClick='toggleBox("Output-2082781203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2082781203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2082781203">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-542365801" onClick='toggleBox("Output-542365801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-542365801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-542365801">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1652807864" onClick='toggleBox("Output-1652807864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1652807864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1652807864">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1387210478" onClick='toggleBox("Output-1387210478", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1387210478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1387210478">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1714113641" onClick='toggleBox("Output-1714113641", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714113641" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714113641">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-929383713" onClick='toggleBox("Output-929383713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-929383713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-929383713">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2122049087" onClick='toggleBox("Output-2122049087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2122049087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2122049087">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-850551034" onClick='toggleBox("Output-850551034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-850551034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-850551034">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1292040526" onClick='toggleBox("Output-1292040526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292040526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292040526">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1490509465" onClick='toggleBox("Output-1490509465", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1490509465" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1490509465">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo2.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo2<br/>
+<a href="#Output-204684384" onClick='toggleBox("Output-204684384", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-204684384" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-204684384">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo2@7cc0cdad</td></tr>
+<tr>
+<td title='TestNG.Demo9.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo9<br/>
+<a href="#Output-224100622" onClick='toggleBox("Output-224100622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-224100622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-224100622">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo9@7b2bbc3</td></tr>
+<tr>
+<td title='TestNG.Demo9.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo9<br/>
+<a href="#Output-1138410383" onClick='toggleBox("Output-1138410383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1138410383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1138410383">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo9@7b2bbc3</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1813187653" onClick='toggleBox("Output-1813187653", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1813187653" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1813187653">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-510147134" onClick='toggleBox("Output-510147134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510147134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510147134">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1296456465" onClick='toggleBox("Output-1296456465", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1296456465" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1296456465">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1409154977" onClick='toggleBox("Output-1409154977", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1409154977" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1409154977">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1912960603" onClick='toggleBox("Output-1912960603", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1912960603" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1912960603">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-341138954" onClick='toggleBox("Output-341138954", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-341138954" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-341138954">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo3.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo3<br/>
+<a href="#Output-1768792843" onClick='toggleBox("Output-1768792843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1768792843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1768792843">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo3@7c7b252e</td></tr>
+<tr>
+<td title='TestNG.VerifyLoginPage_SoftAssert.verifyValidLoginPage1()'><b>verifyValidLoginPage1</b><br>Test class: TestNG.VerifyLoginPage_SoftAssert</td>
+<td></td>
+<td>12</td>
+<td>TestNG.VerifyLoginPage_SoftAssert@36ebc363</td></tr>
+<tr>
+<td title='TestNG.Demo5.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo5<br/>
+<a href="#Output-1229202732" onClick='toggleBox("Output-1229202732", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1229202732" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1229202732">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo5@368f2016</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-195984832" onClick='toggleBox("Output-195984832", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-195984832" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-195984832">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-997055773" onClick='toggleBox("Output-997055773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-997055773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-997055773">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1606286799" onClick='toggleBox("Output-1606286799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1606286799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1606286799">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-741730375" onClick='toggleBox("Output-741730375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-741730375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-741730375">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo10.composeEditTestCase2()'><b>composeEditTestCase2</b><br>Test class: TestNG.Demo10<br/>
+<a href="#Output-1497018177" onClick='toggleBox("Output-1497018177", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1497018177" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1497018177">
+ComposeEditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo10@47eaca72</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-702061917" onClick='toggleBox("Output-702061917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-702061917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-702061917">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-509891820" onClick='toggleBox("Output-509891820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509891820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509891820">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo4.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo4<br/>
+<a href="#Output-797814020" onClick='toggleBox("Output-797814020", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-797814020" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-797814020">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo4@4d5d943d</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1740846921" onClick='toggleBox("Output-1740846921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1740846921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1740846921">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1063980005" onClick='toggleBox("Output-1063980005", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1063980005" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1063980005">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2014461570" onClick='toggleBox("Output-2014461570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2014461570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2014461570">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-547201549" onClick='toggleBox("Output-547201549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-547201549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-547201549">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1632413663" onClick='toggleBox("Output-1632413663", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1632413663" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1632413663">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-63387985" onClick='toggleBox("Output-63387985", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-63387985" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-63387985">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-812586739" onClick='toggleBox("Output-812586739", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-812586739" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-812586739">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-586127428" onClick='toggleBox("Output-586127428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-586127428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-586127428">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2077528955" onClick='toggleBox("Output-2077528955", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2077528955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2077528955">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1478150312" onClick='toggleBox("Output-1478150312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1478150312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1478150312">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1687940142" onClick='toggleBox("Output-1687940142", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1687940142" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1687940142">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-379645464" onClick='toggleBox("Output-379645464", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-379645464" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-379645464">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-452121674" onClick='toggleBox("Output-452121674", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452121674" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452121674">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-285133380" onClick='toggleBox("Output-285133380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-285133380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-285133380">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-687059528" onClick='toggleBox("Output-687059528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-687059528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-687059528">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.TestNG_AnnotationEx1.testCase1()'><b>testCase1</b><br>Test class: TestNG.TestNG_AnnotationEx1<br/>
+<a href="#Output-1727361096" onClick='toggleBox("Output-1727361096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1727361096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1727361096">
+TestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG_AnnotationEx1@206a70ef</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-270095066" onClick='toggleBox("Output-270095066", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-270095066" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-270095066">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1270038388" onClick='toggleBox("Output-1270038388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1270038388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1270038388">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-550302731" onClick='toggleBox("Output-550302731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-550302731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-550302731">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-257608605" onClick='toggleBox("Output-257608605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-257608605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-257608605">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1237825806" onClick='toggleBox("Output-1237825806", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237825806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237825806">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo4.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo4<br/>
+<a href="#Output-1402433372" onClick='toggleBox("Output-1402433372", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1402433372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402433372">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo4@4d5d943d</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-574268151" onClick='toggleBox("Output-574268151", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-574268151" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-574268151">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1201173334" onClick='toggleBox("Output-1201173334", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1201173334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1201173334">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1217875525" onClick='toggleBox("Output-1217875525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1217875525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1217875525">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1412794598" onClick='toggleBox("Output-1412794598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1412794598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1412794598">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo6.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo6<br/>
+<a href="#Output-464064894" onClick='toggleBox("Output-464064894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-464064894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-464064894">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo6@4c583ecf</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-16868310" onClick='toggleBox("Output-16868310", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16868310" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16868310">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-245765246" onClick='toggleBox("Output-245765246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-245765246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-245765246">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1604002113" onClick='toggleBox("Output-1604002113", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1604002113" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1604002113">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-800281454" onClick='toggleBox("Output-800281454", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-800281454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-800281454">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1898155970" onClick='toggleBox("Output-1898155970", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1898155970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1898155970">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-38262958" onClick='toggleBox("Output-38262958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-38262958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-38262958">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-637241618" onClick='toggleBox("Output-637241618", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-637241618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-637241618">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-671046933" onClick='toggleBox("Output-671046933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-671046933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-671046933">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1427040229" onClick='toggleBox("Output-1427040229", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1427040229" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1427040229">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1628998132" onClick='toggleBox("Output-1628998132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1628998132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1628998132">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-802243390" onClick='toggleBox("Output-802243390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-802243390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-802243390">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1936722816" onClick='toggleBox("Output-1936722816", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1936722816" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1936722816">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2033968586" onClick='toggleBox("Output-2033968586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2033968586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2033968586">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-375457936" onClick='toggleBox("Output-375457936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-375457936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-375457936">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1325144078" onClick='toggleBox("Output-1325144078", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1325144078" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1325144078">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-122114483" onClick='toggleBox("Output-122114483", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-122114483" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-122114483">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2146338580" onClick='toggleBox("Output-2146338580", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2146338580" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2146338580">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2119891622" onClick='toggleBox("Output-2119891622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2119891622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2119891622">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo11.composeEditTestCase2()'><b>composeEditTestCase2</b><br>Test class: TestNG.Demo11<br/>
+<a href="#Output-1526970878" onClick='toggleBox("Output-1526970878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526970878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526970878">
+ComposeEditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo11@55141def</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-854487022" onClick='toggleBox("Output-854487022", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-854487022" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-854487022">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo3.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo3<br/>
+<a href="#Output-1926096844" onClick='toggleBox("Output-1926096844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926096844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926096844">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo3@7c7b252e</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1771667101" onClick='toggleBox("Output-1771667101", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1771667101" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1771667101">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-726181440" onClick='toggleBox("Output-726181440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-726181440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-726181440">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1234250905" onClick='toggleBox("Output-1234250905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1234250905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1234250905">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-790722099" onClick='toggleBox("Output-790722099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-790722099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-790722099">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo7.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo7<br/>
+<a href="#Output-657381435" onClick='toggleBox("Output-657381435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-657381435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657381435">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo7@692f203f</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-621300254" onClick='toggleBox("Output-621300254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-621300254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-621300254">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1110031167" onClick='toggleBox("Output-1110031167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1110031167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1110031167">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1328238652" onClick='toggleBox("Output-1328238652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1328238652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1328238652">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo9.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo9<br/>
+<a href="#Output-785570251" onClick='toggleBox("Output-785570251", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-785570251" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-785570251">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo9@7b2bbc3</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-259219561" onClick='toggleBox("Output-259219561", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-259219561" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-259219561">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1473771722" onClick='toggleBox("Output-1473771722", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1473771722" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1473771722">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-379478400" onClick='toggleBox("Output-379478400", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-379478400" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-379478400">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-212683148" onClick='toggleBox("Output-212683148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-212683148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-212683148">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo3.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo3<br/>
+<a href="#Output-1607792885" onClick='toggleBox("Output-1607792885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1607792885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1607792885">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo3@7c7b252e</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-282265585" onClick='toggleBox("Output-282265585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-282265585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-282265585">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1910438136" onClick='toggleBox("Output-1910438136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1910438136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1910438136">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1068586139" onClick='toggleBox("Output-1068586139", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1068586139" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1068586139">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1866875501" onClick='toggleBox("Output-1866875501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866875501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866875501">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1947896119" onClick='toggleBox("Output-1947896119", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1947896119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1947896119">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo11.loginCreateTestCase1()'><b>loginCreateTestCase1</b><br>Test class: TestNG.Demo11<br/>
+<a href="#Output-1473205473" onClick='toggleBox("Output-1473205473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1473205473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1473205473">
+LoginCreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo11@55141def</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1117519786" onClick='toggleBox("Output-1117519786", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1117519786" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1117519786">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1881901842" onClick='toggleBox("Output-1881901842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1881901842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1881901842">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo5.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo5<br/>
+<a href="#Output-199449817" onClick='toggleBox("Output-199449817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-199449817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-199449817">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo5@368f2016</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1030684756" onClick='toggleBox("Output-1030684756", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1030684756" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1030684756">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1194893830" onClick='toggleBox("Output-1194893830", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1194893830" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1194893830">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-585324508" onClick='toggleBox("Output-585324508", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-585324508" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-585324508">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1212116343" onClick='toggleBox("Output-1212116343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1212116343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1212116343">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-482052083" onClick='toggleBox("Output-482052083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-482052083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-482052083">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo6.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo6<br/>
+<a href="#Output-171802996" onClick='toggleBox("Output-171802996", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-171802996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-171802996">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo6@4c583ecf</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2125062626" onClick='toggleBox("Output-2125062626", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2125062626" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2125062626">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo11.sentMailDeleteTestCase3()'><b>sentMailDeleteTestCase3</b><br>Test class: TestNG.Demo11<br/>
+<a href="#Output-936653983" onClick='toggleBox("Output-936653983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-936653983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-936653983">
+SentmailDeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo11@55141def</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1483298597" onClick='toggleBox("Output-1483298597", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1483298597" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1483298597">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-6444850" onClick='toggleBox("Output-6444850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6444850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6444850">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Inheritance_In_TestNG.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Inheritance_In_TestNG<br/>
+<a href="#Output-268084911" onClick='toggleBox("Output-268084911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-268084911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-268084911">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Inheritance_In_TestNG@3c46e67a</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-370370379" onClick='toggleBox("Output-370370379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-370370379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-370370379">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-416841088" onClick='toggleBox("Output-416841088", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-416841088" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-416841088">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-48208774" onClick='toggleBox("Output-48208774", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-48208774" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-48208774">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-173214986" onClick='toggleBox("Output-173214986", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-173214986" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-173214986">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo1.testCase2()'><b>testCase2</b><br>Test class: TestNG.Demo1<br/>
+<a href="#Output-931480286" onClick='toggleBox("Output-931480286", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-931480286" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-931480286">
+TestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo1@4562e04d</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1409545055" onClick='toggleBox("Output-1409545055", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1409545055" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1409545055">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Inheritance_In_TestNG.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Inheritance_In_TestNG<br/>
+<a href="#Output-977552154" onClick='toggleBox("Output-977552154", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-977552154" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-977552154">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Inheritance_In_TestNG@3c46e67a</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1833848849" onClick='toggleBox("Output-1833848849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1833848849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1833848849">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1973233403" onClick='toggleBox("Output-1973233403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1973233403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1973233403">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1207608476" onClick='toggleBox("Output-1207608476", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1207608476" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1207608476">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-263885523" onClick='toggleBox("Output-263885523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-263885523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-263885523">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-552936351" onClick='toggleBox("Output-552936351", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-552936351" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-552936351">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-710190911" onClick='toggleBox("Output-710190911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-710190911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-710190911">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1353530305" onClick='toggleBox("Output-1353530305", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1353530305" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1353530305">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-363509958" onClick='toggleBox("Output-363509958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-363509958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-363509958">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Inheritance_In_TestNG.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Inheritance_In_TestNG<br/>
+<a href="#Output-390689829" onClick='toggleBox("Output-390689829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-390689829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-390689829">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Inheritance_In_TestNG@3c46e67a</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1716093734" onClick='toggleBox("Output-1716093734", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1716093734" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1716093734">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1029472813" onClick='toggleBox("Output-1029472813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1029472813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1029472813">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1523553211" onClick='toggleBox("Output-1523553211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1523553211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1523553211">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-423583818" onClick='toggleBox("Output-423583818", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-423583818" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-423583818">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1825738663" onClick='toggleBox("Output-1825738663", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1825738663" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1825738663">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo4.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo4<br/>
+<a href="#Output-737945227" onClick='toggleBox("Output-737945227", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-737945227" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-737945227">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo4@4d5d943d</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-154319946" onClick='toggleBox("Output-154319946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-154319946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-154319946">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-718068661" onClick='toggleBox("Output-718068661", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-718068661" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-718068661">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-71706941" onClick='toggleBox("Output-71706941", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-71706941" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-71706941">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1432536094" onClick='toggleBox("Output-1432536094", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1432536094" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1432536094">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1292838001" onClick='toggleBox("Output-1292838001", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292838001" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292838001">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-812553708" onClick='toggleBox("Output-812553708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-812553708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-812553708">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.InheritanceEx_In_TestNG.testCase1()'><b>testCase1</b><br>Test class: TestNG.InheritanceEx_In_TestNG<br/>
+<a href="#Output-1922930974" onClick='toggleBox("Output-1922930974", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1922930974" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1922930974">
+testCase1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.InheritanceEx_In_TestNG@c730b35</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1309238149" onClick='toggleBox("Output-1309238149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1309238149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1309238149">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-455785638" onClick='toggleBox("Output-455785638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-455785638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-455785638">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-460201727" onClick='toggleBox("Output-460201727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-460201727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-460201727">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-620557167" onClick='toggleBox("Output-620557167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-620557167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-620557167">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1567705314" onClick='toggleBox("Output-1567705314", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1567705314" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1567705314">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-364639279" onClick='toggleBox("Output-364639279", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-364639279" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-364639279">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-865667596" onClick='toggleBox("Output-865667596", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-865667596" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-865667596">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-359368949" onClick='toggleBox("Output-359368949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-359368949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-359368949">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1810742349" onClick='toggleBox("Output-1810742349", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1810742349" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1810742349">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-262445056" onClick='toggleBox("Output-262445056", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-262445056" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-262445056">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo1.testCase3()'><b>testCase3</b><br>Test class: TestNG.Demo1<br/>
+<a href="#Output-926434463" onClick='toggleBox("Output-926434463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-926434463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-926434463">
+TestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo1@4562e04d</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1832532108" onClick='toggleBox("Output-1832532108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1832532108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1832532108">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1306834002" onClick='toggleBox("Output-1306834002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1306834002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1306834002">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-50699452" onClick='toggleBox("Output-50699452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50699452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50699452">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1992550266" onClick='toggleBox("Output-1992550266", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1992550266" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1992550266">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-556488341" onClick='toggleBox("Output-556488341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-556488341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-556488341">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo10.loginCreateTestCase1()'><b>loginCreateTestCase1</b><br>Test class: TestNG.Demo10<br/>
+<a href="#Output-210281271" onClick='toggleBox("Output-210281271", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-210281271" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-210281271">
+LoginCreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo10@47eaca72</td></tr>
+<tr>
+<td title='TestNG.TestNG_AnnotationEx2.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.TestNG_AnnotationEx2<br/>
+<a href="#Output-1374066265" onClick='toggleBox("Output-1374066265", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1374066265" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1374066265">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG_AnnotationEx2@292b08d6</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1471086700" onClick='toggleBox("Output-1471086700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1471086700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1471086700">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1006227006" onClick='toggleBox("Output-1006227006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1006227006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1006227006">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1671507048" onClick='toggleBox("Output-1671507048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1671507048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1671507048">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.TestNG_AnnotationEx2.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.TestNG_AnnotationEx2<br/>
+<a href="#Output-658909832" onClick='toggleBox("Output-658909832", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-658909832" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-658909832">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG_AnnotationEx2@292b08d6</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-11939193" onClick='toggleBox("Output-11939193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11939193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11939193">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo1.testCase1()'><b>testCase1</b><br>Test class: TestNG.Demo1<br/>
+<a href="#Output-879583678" onClick='toggleBox("Output-879583678", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-879583678" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-879583678">
+TestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo1@4562e04d</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-890545344" onClick='toggleBox("Output-890545344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-890545344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-890545344">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1373419525" onClick='toggleBox("Output-1373419525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1373419525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1373419525">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1537471098" onClick='toggleBox("Output-1537471098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1537471098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1537471098">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1839337592" onClick='toggleBox("Output-1839337592", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1839337592" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1839337592">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-730923082" onClick='toggleBox("Output-730923082", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-730923082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-730923082">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1944201789" onClick='toggleBox("Output-1944201789", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944201789" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944201789">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-454305524" onClick='toggleBox("Output-454305524", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-454305524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-454305524">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.TestNG_AnnotationEx1.testCase3()'><b>testCase3</b><br>Test class: TestNG.TestNG_AnnotationEx1<br/>
+<a href="#Output-599984672" onClick='toggleBox("Output-599984672", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-599984672" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-599984672">
+TestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG_AnnotationEx1@206a70ef</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1249875355" onClick='toggleBox("Output-1249875355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1249875355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1249875355">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-2051120548" onClick='toggleBox("Output-2051120548", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2051120548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2051120548">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-27362884" onClick='toggleBox("Output-27362884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27362884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27362884">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.VerifyLoginPage_Assert.verifyValidLoginPage1()'><b>verifyValidLoginPage1</b><br>Test class: TestNG.VerifyLoginPage_Assert</td>
+<td></td>
+<td>10</td>
+<td>TestNG.VerifyLoginPage_Assert@22555ebf</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-900636745" onClick='toggleBox("Output-900636745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-900636745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-900636745">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-198499365" onClick='toggleBox("Output-198499365", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-198499365" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-198499365">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo5.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo5<br/>
+<a href="#Output-1105322512" onClick='toggleBox("Output-1105322512", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1105322512" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1105322512">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo5@368f2016</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-170144208" onClick='toggleBox("Output-170144208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-170144208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-170144208">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1765795529" onClick='toggleBox("Output-1765795529", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1765795529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1765795529">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1456339771" onClick='toggleBox("Output-1456339771", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1456339771" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1456339771">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1297836716" onClick='toggleBox("Output-1297836716", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1297836716" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1297836716">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1787079037" onClick='toggleBox("Output-1787079037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1787079037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1787079037">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-13803304" onClick='toggleBox("Output-13803304", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13803304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13803304">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo10.sentMailDeleteTestCase3()'><b>sentMailDeleteTestCase3</b><br>Test class: TestNG.Demo10<br/>
+<a href="#Output-1515638188" onClick='toggleBox("Output-1515638188", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1515638188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1515638188">
+SentmailDeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo10@47eaca72</td></tr>
+<tr>
+<td title='TestNG.Demo8.createTestCase1()'><b>createTestCase1</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1714550218" onClick='toggleBox("Output-1714550218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714550218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714550218">
+CreateTestCase-1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1348453796" onClick='toggleBox("Output-1348453796", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1348453796" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1348453796">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-686989583" onClick='toggleBox("Output-686989583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-686989583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-686989583">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-1337192014" onClick='toggleBox("Output-1337192014", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1337192014" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1337192014">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo8.deleteTestCase3()'><b>deleteTestCase3</b><br>Test class: TestNG.Demo8<br/>
+<a href="#Output-236304360" onClick='toggleBox("Output-236304360", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-236304360" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-236304360">
+DeleteTestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo8@48f2bd5b</td></tr>
+<tr>
+<td title='TestNG.Demo2.editTestCase2()'><b>editTestCase2</b><br>Test class: TestNG.Demo2<br/>
+<a href="#Output-515184459" onClick='toggleBox("Output-515184459", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515184459" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515184459">
+EditTestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Demo2@7cc0cdad</td></tr>
+</table><p>
+</body>
+</html>
